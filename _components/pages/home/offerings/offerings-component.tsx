@@ -26,7 +26,7 @@ export default function OfferingsComponent({
           ))}
         </div>
 
-        <div className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-15">
+        <div className="grid grid-cols-1 tablet:grid-cols-2 gap-15">
           {offerings.slice(2, 5).map((offering, index) => (
             <OfferingCard
               key={index + 2}

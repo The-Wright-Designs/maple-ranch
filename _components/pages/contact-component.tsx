@@ -28,7 +28,7 @@ const ContactComponent = ({ department = "all" }: ContactComponentProps) => {
               <ContactSubsection
                 title={
                   department === "all"
-                    ? "General enquiries, camping, accommodation & Quarter Horses"
+                    ? "General enquiries & Quarter Horses"
                     : ""
                 }
                 department="general"

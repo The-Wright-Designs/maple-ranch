@@ -15,8 +15,9 @@ export default function AboutNavigationComponent() {
           <p className="mb-4">
             Situated just ten kilometers North of Plettenberg Bay, conveniently
             positioned along the N2 motorway and within five minutes of two
-            beautiful blue flag beaches and bird, primate, reptile, big cat, and
-            elephant sanctuaries, wine farms, Polo estates and more.
+            beautiful blue flag beaches, the Keurbooms Lagoon, wine farms, Polo
+            estates as well as bird, primate, reptile, big cat, and elephant
+            sanctuaries.
           </p>
           <p>
             We strive to be an entertainment destination, catering for all ages.

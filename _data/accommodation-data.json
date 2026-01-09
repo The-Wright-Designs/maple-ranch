@@ -1,0 +1,17 @@
+{
+  "title": "Accommodation",
+  "description": "We offer cozy off-grid cabins, our famous Tiny House and camping facilities, with access to the on-site restaurant and pub. Conveniently located near two blue flag beaches, wildlife sanctuaries, kayaking hotspots and popular forest hiking and cycling trails from the Ranch",
+  "imageSrcDesktop": "/images/home-page/offerings/accommodation.avif",
+  "layout": "side-by-side",
+  "contact": {
+    "department": "general",
+    "show": true
+  },
+  "buttons": {
+    "primary": {
+      "text": "Tiny House Bookings",
+      "href": "https://www.airbnb.com/rooms/1299124430931295102",
+      "target": "_blank"
+    }
+  }
+}

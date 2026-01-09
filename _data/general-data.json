@@ -5,24 +5,12 @@
       "/images/home-page/gallery/hero-12.jpg",
       "/images/home-page/gallery/hero-6.jpg",
       "/images/home-page/gallery/hero-4.jpg",
-      "/images/home-page/gallery/hero-3.jpg",
       "/images/home-page/gallery/hero-10.jpg",
       "/images/home-page/gallery/hero-5.jpg",
       "/images/home-page/gallery/hero-8.jpg",
       "/images/home-page/gallery/hero-7.jpg",
       "/images/home-page/gallery/hero-2.jpg",
-      "/images/home-page/gallery/hero-1.jpg",
-      "/images/home-page/gallery/hero-9.jpg"
-    ],
-    "heroGallery": [
-      "/images/hero-slider/20231229_112048.jpg",
-      "/images/hero-slider/IMG-20231018-WA0103.jpg",
-      "/images/hero-slider/20230407_083744.jpg",
-      "/images/adventures/hero-slider/4315243654.jpeg",
-      "/images/hero-slider/restaurant.jpg",
-      "/images/hero-slider/20230407_084013.jpg",
-      "/images/hero-slider/Screenshot_20231202-180417_Facebook.jpg",
-      "/images/hero-slider/20240102_153437.jpg"
+      "/images/home-page/gallery/hero-1.jpg"
     ],
     "offerings": [
       {
@@ -47,27 +35,10 @@
         }
       },
       {
-        "title": "Accommodation",
-        "description": "We offer cozy off-grid cabins, our famous Tiny House and camping facilities, with access to the on-site restaurant and pub. Conveniently located near two blue flag beaches, wildlife sanctuaries, kayaking hotspots and popular forest hiking and cycling trails from the Ranch",
-        "imageSrcDesktop": "/images/home-page/offerings/accommodation.avif",
-        "layout": "side-by-side",
-        "contact": {
-          "department": "general",
-          "show": true
-        },
-        "buttons": {
-          "primary": {
-            "text": "Tiny House Bookings",
-            "href": "https://www.airbnb.com/rooms/1299124430931295102",
-            "target": "_blank"
-          }
-        }
-      },
-      {
         "title": "Moss & Maple Restaurant",
-        "description": "Our restaurant features an affordable menu, well-stocked pub, popular kids&apos; play park, pony rides, pump track with e bike hire and a shop offering locally-sourced gifts, treats, and handcrafted goods. We are pet friendly, allowing well behaved dogs on sections of our covered decks and on our lawns and shaded Pavilion.",
+        "description": "Our restaurant features an affordable menu, well-stocked pub, popular kids' play park, pony rides, pump track with e bike hire and a shop offering locally-sourced gifts, treats, and handcrafted goods. We are pet friendly, allowing well behaved dogs on sections of our covered decks and on our lawns and shaded Pavilion.",
         "imageSrcDesktop": "/images/home-page/offerings/restaurant.png",
-        "layout": "stacked",
+        "layout": "side-by-side",
         "contact": {
           "department": "restaurant",
           "show": true
@@ -196,7 +167,7 @@
     "about": {
       "heading": "About",
       "paragraph": [
-        "MR Adventures will soon be offering a diverse range of outdoor fun and skill enriching activities from forest trails on 4x4 electric ATV Quads and lagoon or river kayaking, to team building events and school camps in our unique farmyard setting. Being only 10 minutes from Plettenberg Bay, our spacious Farm Field accommodates diverse activities while providing a refreshing outdoor experience without leaving the city.",
+        "MR Adventures offers a diverse range of outdoor fun and skill enriching activities from forest trails on 4x4 electric ATV Quads and lagoon or river kayaking, to team building events and school camps in our unique farmyard setting. Being only 10 minutes from Plettenberg Bay, our spacious Farm Field accommodates diverse activities while providing a refreshing outdoor experience without leaving the city.",
         "For school groups, corporate and government departments we offer customized programs with comfortable lodging, full catering, and professional facilitation focused on building leadership, confidence and connection. Our experienced team prioritizes safety and creates meaningful experiences for all participants in our picturesque horse ranch environment."
       ],
       "images": [

@@ -13,8 +13,10 @@ const {
 } = offeringsData;
 
 export const metadata = generatePageMetadata({
-  title: "Maple Ranch | Restaurant, Adventures & Accommodation in Plettenberg Bay",
-  description: "Experience Maple Ranch near Plettenberg Bay - featuring Moss & Maple Restaurant with farm-to-table dining, outdoor adventures including ATV trails and horse rides, cozy accommodation, and our Blue Haze Quarter Horse Stud. Pet-friendly with kids play areas.",
+  title:
+    "Maple Ranch | Restaurant, Adventures & Quater Horses in Plettenberg Bay",
+  description:
+    "Experience Maple Ranch near Plettenberg Bay - featuring Moss & Maple Restaurant with farm-to-table dining, outdoor adventures including ATV trails and horse rides, and our Blue Haze Quarter Horse Stud. Pet-friendly with kids play areas.",
   keywords: [
     "Maple Ranch",
     "Plettenberg Bay",
@@ -23,7 +25,6 @@ export const metadata = generatePageMetadata({
     "restaurant",
     "Moss and Maple",
     "adventures",
-    "accommodation",
     "quarter horses",
     "ATV trails",
     "horse trails",
@@ -35,7 +36,7 @@ export const metadata = generatePageMetadata({
     "pony rides",
     "camping",
     "tiny house",
-    "Blue Haze Quarter Horse Stud"
+    "Blue Haze Quarter Horse Stud",
   ],
   path: "/",
 });
