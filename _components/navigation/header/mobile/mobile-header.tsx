@@ -29,7 +29,7 @@ export function MobileHeader() {
       <div className="flex w-full items-center justify-between">
         <Link href="/" className="flex gap-2.5">
           <Image
-            src="/logo/maple-ranch-logo.png"
+            src="/logos/maple-ranch-logo.png"
             alt="Maple Ranch logo"
             width={60}
             height={60}

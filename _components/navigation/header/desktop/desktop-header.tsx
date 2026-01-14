@@ -19,7 +19,7 @@ export function DesktopHeader() {
       <div className="hidden desktop:block py-5 h-[100px]">
         <Link href="/">
           <Image
-            src="/logo/maple-ranch-logo.png"
+            src="/logos/maple-ranch-logo.png"
             alt="Maple Ranch Logo"
             width={200}
             height={200}
@@ -49,7 +49,7 @@ export function DesktopHeader() {
 
       <Link href="/" className="place-self-center">
         <Image
-          src="/logo/maple-ranch-logo.png"
+          src="/logos/maple-ranch-logo.png"
           alt="Maple Ranch Logo"
           width={200}
           height={200}

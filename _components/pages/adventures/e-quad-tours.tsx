@@ -47,7 +47,7 @@ const EquadToursComponent = ({
           {paragraph.map((para, index) => (
             <p key={index}>{para}</p>
           ))}
-          <div className="space-y-2 p-4 bg-black rounded-[6px] [&_p]:text-white [&_span]:text-white [&_h4]:text-white">
+          <div className="flex flex-col gap-2 p-4 bg-black rounded-[6px] [&_p]:text-white [&_span]:text-white [&_h4]:text-white">
             <h4 className="text-[20px] font-bold">Pricing:</h4>
             <p>
               {pricing.title}:

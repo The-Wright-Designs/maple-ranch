@@ -26,7 +26,7 @@ export function DesktopFooter() {
 
         <div className="flex flex-col gap-5 items-end justify-around">
           <Image
-            src="/logo/maple-ranch-logo.png"
+            src="/logos/maple-ranch-logo.png"
             alt="Maple Ranch Logo"
             width={98}
             height={98}

@@ -35,7 +35,7 @@ const HeroComponent = ({
         )}
       >
         <Image
-          src="/logo/maple-ranch-logo.png"
+          src="/logos/maple-ranch-logo.png"
           alt="Maple Ranch Logo"
           className={classNames("max-w-[300px] object-contain desktop:hidden", {
             hidden: pageName,

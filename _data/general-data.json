@@ -75,7 +75,7 @@
         "buttons": {
           "primary": {
             "text": "Bookings",
-            "href": "/adventures#contact"
+            "href": "/horse-trails#contact"
           }
         }
       }
@@ -195,6 +195,47 @@
       "images": [
         "/images/adventures/20251107_141622.jpg",
         "/images/adventures/20251107_143849.jpg"
+      ],
+      "button": {
+        "text": "Bookings",
+        "href": "#contact"
+      }
+    }
+  },
+  "horseTrailsPage": {
+    "heroGallery": [
+      "/images/horse-trails/hero-slider/20251211_084850.jpg",
+      "/images/horse-trails/hero-slider/IMG-20251211-WA0027.jpg",
+      "/images/horse-trails/hero-slider/RUID6d40d9372faa44f8b5ab621ad0dcc64c.jpg",
+      "/images/horse-trails/hero-slider/RUID53c84ee8ce664fe99d262fa1c1b28b5a.jpeg"
+    ],
+    "about": {
+      "heading": "Horse Trails",
+      "paragraph": [
+        "Our trails start from Maple Ranch and meander through the shady MTO forests and plantations on game trails and jeep tracks, allowing a few trots, canters and even gallops if participants are up to it.",
+        "Trail duration 1 hour to 2 hours.",
+        "Trails offer views of Plettenberg Bay, Robberg and sometimes even breaching whales and sightings of bushbuck or duiker and the Knysna Loerie are not rare.",
+        "Our valuable Blue Haze American Quarter Horse Stud mares are used for these rides and therefore sometimes accompanied by their foals, a unique experience for many guests. We do have a few ponies for accomplished small riders to join in too.",
+        "Our use of Quarter horses for commercial trails is quite unique in South Africa although they are probably the best breed of horse to do this work seeing they were bred for and by cowboys on cattle ranches."
+      ],
+      "subparagraph1": {
+        "subheading": "Rider limits",
+        "paragraph": [
+          "Our maximum rider weight limit is 100kg and we don't take beginner riders on our trails. Riders must show that they know how to mount, turn and stop a horse without jerking at the reins or pulling on the reins unnecessarily.",
+          "Local riding instructors do offer their services on their horses nearby for those who wish to learn."
+        ]
+      },
+      "subparagraph2": {
+        "subheading": "Trail Riding Season",
+        "paragraph": [
+          "Available from 10th December until 10th January. Horses will then be rested for a while and resume work from March until May."
+        ]
+      },
+      "bookingNote": "Bookings can be made via email or by calling at least 24 hours in advance.",
+      "images": [
+        "/images/horse-trails/IMG-20240218-WA0031.jpg",
+        "/images/horse-trails/RUID34a262d4a011405f8e7b5d115462c786.jpeg",
+        "/images/horse-trails/RUIDe3a0e9f2496743018e6eb6a88ba480cc.jpg"
       ],
       "button": {
         "text": "Bookings",

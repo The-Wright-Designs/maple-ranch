@@ -8,16 +8,16 @@
     "url": "/#restaurant"
   },
   {
-    "title": "Maple Ranch Adventures",
-    "url": "/adventures"
-  },
-  {
     "title": "Quarter Horses",
     "url": "/quarter-horses"
   },
   {
+    "title": "Maple Ranch Adventures",
+    "url": "/adventures"
+  },
+  {
     "title": "Horse Trails",
-    "url": "/#horse-trails"
+    "url": "/horse-trails"
   },
   {
     "title": "Contact",

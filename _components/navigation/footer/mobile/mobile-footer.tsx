@@ -5,7 +5,7 @@ export function MobileFooter() {
   return (
     <div className="flex flex-col gap-5 items-center px-5 py-10 desktop:hidden">
       <Image
-        src="/logo/maple-ranch-logo.png"
+        src="/logos/maple-ranch-logo.png"
         alt="Maple Ranch Logo"
         width={140}
         height={140}
