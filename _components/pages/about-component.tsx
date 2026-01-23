@@ -1,5 +1,6 @@
 import ButtonLink from "@/_components/ui/buttons/button-link";
 import Image from "next/image";
+import { parseLinks } from "@/_lib/utils/parse-links";
 
 interface AboutComponentProps {
   data: {
@@ -34,7 +35,7 @@ const AboutComponent = ({
         <div className="desktop:grid gap-10 desktop:grid-cols-3">
           <div className="flex flex-col gap-4 desktop:order-last">
             {paragraph.map((para, index) => (
-              <p key={index}>{para}</p>
+              <p key={index}>{parseLinks(para)}</p>
             ))}
             {subparagraph1 && (
               <div>
@@ -42,7 +43,7 @@ const AboutComponent = ({
                   {subparagraph1.subheading}
                 </h3>
                 {subparagraph1.paragraph.map((para, index) => (
-                  <p key={index}>{para}</p>
+                  <p key={index}>{parseLinks(para)}</p>
                 ))}
               </div>
             )}
@@ -52,12 +53,12 @@ const AboutComponent = ({
                   {subparagraph2.subheading}
                 </h3>
                 {subparagraph2.paragraph.map((para, index) => (
-                  <p key={index}>{para}</p>
+                  <p key={index}>{parseLinks(para)}</p>
                 ))}
               </div>
             )}
             <div className="mt-5">
-              {bookingNote && <p>{bookingNote}</p>}
+              {bookingNote && <p>{parseLinks(bookingNote)}</p>}
               {button && (
                 <ButtonLink
                   color="gold"

@@ -1,5 +1,5 @@
 import { generatePageMetadata } from "@/_lib/metadata";
-import HeroComponent from "@/_lib/hero-component";
+import HeroComponent from "@/_components/pages/hero-component";
 import generalData from "@/_data/general-data.json";
 import AboutComponent from "@/_components/pages/about-component";
 import ContactComponent from "@/_components/pages/contact-component";

@@ -1,5 +1,5 @@
 import { generatePageMetadata } from "@/_lib/metadata";
-import HeroComponent from "@/_lib/hero-component";
+import HeroComponent from "@/_components/pages/hero-component";
 
 import heroGalleryData from "@/_data/general-data.json";
 import AboutComponent from "@/_components/pages/about-component";
@@ -42,7 +42,11 @@ const {
 const QuarterHorses = () => {
   return (
     <div className="max-w-[1360px] mx-auto">
-      <HeroComponent galleryData={heroGallery} pageName="Quarter Horses" />
+      <HeroComponent
+        galleryData={heroGallery}
+        pageName="Quarter Horses"
+        imageUrl="/logos/maple-ranch-blue-haze-logo.png"
+      />
       <PageWrapper cssClasses="grid gap-10 pt-15">
         <AboutComponent data={about} />
         <div id="sires" className="scroll-mt-0" />
