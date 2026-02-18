@@ -14,7 +14,7 @@ const {
 
 export const metadata = generatePageMetadata({
   title:
-    "Maple Ranch | Restaurant, Adventures & Quater Horses in Plettenberg Bay",
+    "Maple Ranch | Restaurant, Adventures & Quarter Horses in Plettenberg Bay",
   description:
     "Experience Maple Ranch near Plettenberg Bay - featuring Moss & Maple Restaurant with farm-to-table dining, outdoor adventures including ATV trails and horse rides, and our Blue Haze Quarter Horse Stud. Pet-friendly with kids play areas.",
   keywords: [
