@@ -40,6 +40,7 @@ export const metadata = generatePageMetadata({
 
 const {
   adventuresPage: { heroGallery, about, eQuadTours },
+  horseTrailsPage: { about: horseTrailsAbout },
 } = heroGalleryData;
 
 const AdventuresPage = () => {
@@ -47,10 +48,18 @@ const AdventuresPage = () => {
     <div className="max-w-[1360px] mx-auto">
       <HeroComponent galleryData={heroGallery} pageName="MR Adventures" />
       <PageWrapper cssClasses="grid gap-15 pt-15">
-        <AboutComponent data={about} />
+        <AboutComponent data={about} isMain />
         <EquadToursComponent data={eQuadTours} />
-        <div id="contact" className="scroll-mt-0" />
-        <ContactComponent department="adventures" />
+        <AboutComponent
+          id="horse-trails"
+          cssClasses="scroll-mt-0"
+          data={horseTrailsAbout}
+        />
+        <ContactComponent
+          id="contact"
+          cssClasses="scroll-mt-0"
+          department="adventures"
+        />
       </PageWrapper>
     </div>
   );

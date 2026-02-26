@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
+import Link from "next/link";
 import classNames from "classnames";
 
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
@@ -223,6 +223,25 @@ const ContactForm = ({ department = "all" }: ContactFormProps) => {
               >
                 Submit
               </ButtonType>
+              <p className="text-[14px] text-white/80">
+                This site is protected by reCAPTCHA and the Google{" "}
+                <Link
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  className="underline underline-offset-4 desktop:hover:opacity-85 ease-in-out duration-300"
+                >
+                  Privacy Policy
+                </Link>{" "}
+                and{" "}
+                <Link
+                  href="https://policies.google.com/terms"
+                  target="_blank"
+                  className="underline underline-offset-4 desktop:hover:opacity-85 ease-in-out duration-300"
+                >
+                  Terms of Service
+                </Link>{" "}
+                apply.
+              </p>
             </>
           )}
         </form>

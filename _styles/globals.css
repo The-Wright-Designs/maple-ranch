@@ -171,3 +171,7 @@
 .swiper-button-prev:hover:after {
   color: white;
 }
+
+.grecaptcha-badge {
+  visibility: hidden;
+}

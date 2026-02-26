@@ -6,20 +6,30 @@ import ContactForm from "@/_components/pages/contact-form";
 import SocialIcons from "@/_lib/social-icons";
 import MapComponent from "@/_components/pages/map-component";
 import ContactSubsection from "@/_components/pages/contact-subsection";
+import classNames from "classnames";
 
 type DepartmentType = "general" | "restaurant" | "adventures" | "all";
 
 interface ContactComponentProps {
   department?: DepartmentType;
+  id?: string;
+  cssClasses?: string;
 }
 
-const ContactComponent = ({ department = "all" }: ContactComponentProps) => {
+const ContactComponent = ({
+  department = "all",
+  id,
+  cssClasses,
+}: ContactComponentProps) => {
   const showGeneral = department === "all" || department === "general";
   const showRestaurant = department === "all" || department === "restaurant";
   const showAdventures = department === "all" || department === "adventures";
 
   return (
-    <section className="grid gap-10 desktop:grid-cols-2">
+    <section
+      className={classNames("grid gap-10 desktop:grid-cols-2", cssClasses)}
+      id={id}
+    >
       <div className="grid gap-10">
         <h2 className="text-[32px] tablet:text-[40px] font-rye">Contact</h2>
         <div className="grid gap-5">

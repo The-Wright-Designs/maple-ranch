@@ -26,7 +26,7 @@ const EquadToursComponent = ({
   data: { heading, paragraph, images, subheading, pricing, disclaimer, button },
 }: AboutComponentProps) => {
   return (
-    <main className="grid gap-5">
+    <section className="grid gap-5">
       <h2 className="text-[32px] tablet:text-[40px] font-rye">{heading}</h2>
       <div className="grid gap-10 desktop:grid-cols-3">
         <div className="grid gap-10 tablet:grid-cols-2 desktop:mt-0 desktop:col-span-2">
@@ -65,14 +65,13 @@ const EquadToursComponent = ({
               hoverTextColor="blue"
               ariaLabel={button.text}
               href={button.href}
-              cssClasses="mt-10"
             >
               {button.text}
             </ButtonLink>
           )}
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

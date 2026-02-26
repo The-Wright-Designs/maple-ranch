@@ -1,6 +1,7 @@
 import ButtonLink from "@/_components/ui/buttons/button-link";
 import Image from "next/image";
 import { parseLinks } from "@/_lib/utils/parse-links";
+import classNames from "classnames";
 
 interface AboutComponentProps {
   data: {
@@ -15,6 +16,9 @@ interface AboutComponentProps {
       href: string;
     };
   };
+  id?: string;
+  cssClasses?: string;
+  isMain?: boolean;
 }
 
 const AboutComponent = ({
@@ -27,83 +31,85 @@ const AboutComponent = ({
     images,
     button,
   },
+  id,
+  cssClasses,
+  isMain = false,
 }: AboutComponentProps) => {
+  const RootElement = isMain ? "main" : "section";
   return (
-    <div className="grid gap-10">
-      <main className="grid gap-5">
-        <h2 className="text-[32px] tablet:text-[40px] font-rye">{heading}</h2>
-        <div className="desktop:grid gap-10 desktop:grid-cols-3">
-          <div className="flex flex-col gap-4 desktop:order-last">
-            {paragraph.map((para, index) => (
-              <p key={index}>{parseLinks(para)}</p>
-            ))}
-            {subparagraph1 && (
-              <div>
-                <h3 className="text-subheading font-semibold">
-                  {subparagraph1.subheading}
-                </h3>
-                {subparagraph1.paragraph.map((para, index) => (
-                  <p key={index}>{parseLinks(para)}</p>
-                ))}
-              </div>
-            )}
-            {subparagraph2 && (
-              <div>
-                <h3 className="text-subheading font-semibold">
-                  {subparagraph2.subheading}
-                </h3>
-                {subparagraph2.paragraph.map((para, index) => (
-                  <p key={index}>{parseLinks(para)}</p>
-                ))}
-              </div>
-            )}
-            <div className="mt-5">
-              {bookingNote && <p>{parseLinks(bookingNote)}</p>}
-              {button && (
-                <ButtonLink
-                  color="gold"
-                  hoverTextColor="blue"
-                  ariaLabel={button.text}
-                  href={button.href}
-                  cssClasses="mt-5"
-                >
-                  {button.text}
-                </ButtonLink>
-              )}
-            </div>
-          </div>
-          <div className="grid gap-10 mt-10 tablet:grid-cols-3 desktop:grid-cols-2 desktop:mt-0 desktop:col-span-2">
+    <RootElement className={classNames("grid gap-5", cssClasses)} id={id}>
+      <h2 className="text-[32px] tablet:text-[40px] font-rye">{heading}</h2>
+      <div className="desktop:grid gap-10 desktop:grid-cols-3">
+        <div className="flex flex-col gap-4 desktop:order-last">
+          {paragraph.map((para, index) => (
+            <p key={index}>{parseLinks(para)}</p>
+          ))}
+          {subparagraph1 && (
             <div>
-              <Image
-                src={images[0]}
-                alt={heading}
-                width={400}
-                height={400}
-                className="w-full h-full aspect-square phone:aspect-video object-cover"
-              />
+              <h3 className="text-subheading font-semibold">
+                {subparagraph1.subheading}
+              </h3>
+              {subparagraph1.paragraph.map((para, index) => (
+                <p key={index}>{parseLinks(para)}</p>
+              ))}
             </div>
-            <div className="desktop:order-last">
-              <Image
-                src={images[1]}
-                alt={heading}
-                width={400}
-                height={400}
-                className="w-full h-full object-cover aspect-square phone:aspect-video"
-              />
+          )}
+          {subparagraph2 && (
+            <div>
+              <h3 className="text-subheading font-semibold">
+                {subparagraph2.subheading}
+              </h3>
+              {subparagraph2.paragraph.map((para, index) => (
+                <p key={index}>{parseLinks(para)}</p>
+              ))}
             </div>
-            <div className="desktop:row-span-2">
-              <Image
-                src={images[2]}
-                alt={heading}
-                width={400}
-                height={800}
-                className="hidden w-full h-full aspect-square object-cover phone:aspect-video tablet:block desktop:object-top"
-              />
-            </div>
+          )}
+          <div className="mt-5">
+            {bookingNote && <p>{parseLinks(bookingNote)}</p>}
+            {button && (
+              <ButtonLink
+                color="gold"
+                hoverTextColor="blue"
+                ariaLabel={button.text}
+                href={button.href}
+                cssClasses="mt-5"
+              >
+                {button.text}
+              </ButtonLink>
+            )}
           </div>
         </div>
-      </main>
-    </div>
+        <div className="grid gap-10 mt-10 tablet:grid-cols-3 desktop:grid-cols-2 desktop:mt-0 desktop:col-span-2">
+          <div>
+            <Image
+              src={images[0]}
+              alt={heading}
+              width={400}
+              height={400}
+              className="w-full h-full aspect-square phone:aspect-video object-cover"
+            />
+          </div>
+          <div className="desktop:order-last">
+            <Image
+              src={images[1]}
+              alt={heading}
+              width={400}
+              height={400}
+              className="w-full h-full object-cover aspect-square phone:aspect-video"
+            />
+          </div>
+          <div className="hidden tablet:block desktop:row-span-2">
+            <Image
+              src={images[2]}
+              alt={heading}
+              width={400}
+              height={800}
+              className="w-full h-full aspect-square object-cover phone:aspect-video desktop:object-top"
+            />
+          </div>
+        </div>
+      </div>
+    </RootElement>
   );
 };
 
