@@ -15,7 +15,12 @@ export function parseLinks(text: string): ReactNode[] {
     const linkText = match[1];
     let url = match[2];
 
-    if (!url.startsWith("http://") && !url.startsWith("https://")) {
+    const isExternal =
+      url.startsWith("http://") ||
+      url.startsWith("https://") ||
+      url.startsWith("mailto:");
+
+    if (!isExternal && !url.startsWith("/")) {
       url = `https://${url}`;
     }
 
@@ -23,8 +28,7 @@ export function parseLinks(text: string): ReactNode[] {
       <Link
         key={match.index}
         href={url}
-        target="_blank"
-        rel="noopener noreferrer"
+        {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
         className="text-link-blue desktop:hover:cursor-pointer"
       >
         {linkText}

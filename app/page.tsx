@@ -49,9 +49,12 @@ export default function Home() {
         <AboutNavigationComponent />
         <OfferingsComponent offerings={offerings} />
         <HomePageGalleryComponent />
-        <ReviewsComponent data={reviews} cssClasses="desktop:-mt-10" />
-        <div id="contact" className="scroll-mt-0" />
-        <ContactComponent department="all" />
+        <ReviewsComponent data={reviews} />
+        <ContactComponent
+          id="contact"
+          cssClasses="scroll-mt-10"
+          department="all"
+        />
       </PageWrapper>
     </div>
   );

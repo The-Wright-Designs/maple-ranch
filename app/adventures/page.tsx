@@ -8,13 +8,15 @@ import PageWrapper from "@/_lib/page-wrapper";
 
 export const metadata = generatePageMetadata({
   title:
-    "MR Adventures - E-Quad Tours & Team Building at Maple Ranch in Plettenberg Bay",
+    "MR Adventures - E-Quad Tours, Horse Trails & Team Building at Maple Ranch",
   description:
-    "Experience guided electric quad bike tours through indigenous forests near Plettenberg Bay. Offering team building, school camps, kayaking, and outdoor adventures. Open daily 07:30-18:00. Book your E-Quad tour from R650pp.",
+    "Experience guided electric quad bike tours and scenic horse trails through indigenous forests near Plettenberg Bay. Offering team building, school camps, kayaking, and outdoor adventures. Open daily 07:30-18:00. Book your adventure from R650pp.",
   keywords: [
     "MR Adventures",
     "E-Quad tours Plettenberg Bay",
     "electric quad bike tours Plett",
+    "horse trails Plettenberg Bay",
+    "guided horse rides Plett",
     "forest trails Plettenberg Bay",
     "team building Plett",
     "school camps Plettenberg Bay",
@@ -26,16 +28,17 @@ export const metadata = generatePageMetadata({
     "Keurbooms adventures",
     "whale viewing Plett",
     "electric quad bikes",
+    "Quarter horse trails",
   ],
   path: "/adventures",
   ogTitle:
-    "MR Adventures - E-Quad Tours & Team Building at Maple Ranch in Plettenberg Bay",
+    "MR Adventures - E-Quad Tours, Horse Trails & Team Building at Maple Ranch",
   ogDescription:
-    "Whisper-quiet electric quad bike tours through indigenous forest, team building programs, and outdoor adventures near Plettenberg Bay. Book your adventure today!",
-  twitterTitle: "MR Adventures - E-Quad Tours & Outdoor Activities",
+    "Whisper-quiet electric quad bike tours and scenic horse trails through indigenous forest, team building programs, and outdoor adventures near Plettenberg Bay. Book your adventure today!",
+  twitterTitle: "MR Adventures - E-Quad Tours, Horse Trails & Outdoor Activities",
   twitterDescription:
-    "Guided electric quad bike tours through indigenous forest and team building in Plettenberg Bay.",
-  ogImageAlt: "MR Adventures - E-Quad Tours & Outdoor Activities",
+    "Guided electric quad bike tours, horse trails, and team building in Plettenberg Bay.",
+  ogImageAlt: "MR Adventures - E-Quad Tours, Horse Trails & Outdoor Activities",
 });
 
 const {
@@ -52,14 +55,10 @@ const AdventuresPage = () => {
         <EquadToursComponent data={eQuadTours} />
         <AboutComponent
           id="horse-trails"
-          cssClasses="scroll-mt-0"
+          cssClasses="scroll-mt-10"
           data={horseTrailsAbout}
         />
-        <ContactComponent
-          id="contact"
-          cssClasses="scroll-mt-0"
-          department="adventures"
-        />
+        <ContactComponent id="contact" department="adventures" />
       </PageWrapper>
     </div>
   );
