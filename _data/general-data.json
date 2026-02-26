@@ -154,15 +154,48 @@
       "button": {
         "text": "View our Sires",
         "href": "#sires"
+      },
+      "button2": {
+        "text": "Horse Trail Bookings",
+        "href": "/adventures#horse-trails"
       }
     },
-    "sires": [
-      "/images/quarter-horses/sires/20220630_204139.jpg",
-      "/images/quarter-horses/sires/20230129_094430.jpg",
-      "/images/quarter-horses/sires/IMG-20221023-WA0015.jpg",
-      "/images/quarter-horses/sires/Screenshot_20231119-174359_Facebook.jpg",
-      "/images/quarter-horses/sires/Screenshot_20231119-174504_Facebook.jpg"
-    ]
+    "sires": {
+      "images": [
+        {
+          "src": "/images/sires/bold-enteprise-current-home-sire.jpg",
+          "name": "Bold Enteprise (Current home sire)"
+        },
+        {
+          "src": "/images/sires/sail-on-frozen-shadow-grand-sire.jpg",
+          "name": "Sail On Frozen Shadow (Grand Sire)"
+        },
+        {
+          "src": "/images/sires/copy-cat-rascal-foundation-sire-of-our-mares.jpg",
+          "name": "Copy Cat Rascal (Foundation Sire of our mares)"
+        },
+        {
+          "src": "/images/sires/copy-cat-rascal-2-foundation-sire-of-our-mares.jpg",
+          "name": "Copy Cat Rascal (Foundation Sire of our mares)"
+        },
+        {
+          "src": "/images/sires/tiaans-rooster-by-walla-walla.jpg",
+          "name": "Tiaan's Rooster (By Walla Walla)"
+        },
+        { "src": "/images/sires/bold-sailor.jpg", "name": "Bold Sailor" },
+        {
+          "src": "/images/sires/ccs-lil-poco-rascal.jpg",
+          "name": "Cc's Lil Poco Rascal"
+        },
+        { "src": "/images/sires/gunnas-bugati.jpg", "name": "Gunna's Bugati" },
+        {
+          "src": "/images/sires/newhaven-roan-bean-manalito.jpg",
+          "name": "Newhaven Roan Bean (Manalito)"
+        },
+        { "src": "/images/sires/nimble-twister.jpg", "name": "Nimble Twister" }
+      ],
+      "video": "/images/sires/43t2511.29.31.mp4"
+    }
   },
   "adventuresPage": {
     "heroGallery": [

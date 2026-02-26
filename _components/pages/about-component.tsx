@@ -15,6 +15,10 @@ interface AboutComponentProps {
       text: string;
       href: string;
     };
+    button2?: {
+      text: string;
+      href: string;
+    };
   };
   id?: string;
   cssClasses?: string;
@@ -30,6 +34,7 @@ const AboutComponent = ({
     bookingNote,
     images,
     button,
+    button2,
   },
   id,
   cssClasses,
@@ -69,12 +74,21 @@ const AboutComponent = ({
             {button && (
               <ButtonLink
                 color="gold"
-                hoverTextColor="blue"
                 ariaLabel={button.text}
                 href={button.href}
-                cssClasses="mt-5"
+                cssClasses={classNames(bookingNote ? "mt-5" : "")}
               >
                 {button.text}
+              </ButtonLink>
+            )}
+            {button2 && (
+              <ButtonLink
+                color="red"
+                ariaLabel={button2.text}
+                href={button2.href}
+                cssClasses="mt-5"
+              >
+                {button2.text}
               </ButtonLink>
             )}
           </div>
