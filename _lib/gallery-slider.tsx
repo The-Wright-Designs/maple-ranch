@@ -17,18 +17,26 @@ interface Props {
   data: string[];
 }
 
-const HomePageGallerySlider = ({ cssClasses, data }: Props) => {
+const GallerySlider = ({ cssClasses, data }: Props) => {
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
     <div
       className={classNames(
         "flex flex-col gap-2 overflow-hidden relative aspect-square tablet:aspect-video",
-        cssClasses
+        cssClasses,
       )}
     >
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
+        onSlideChange={(swiper) => {
+          const activeSlide = data[swiper.realIndex];
+          if (/\.(mp4|webm)$/i.test(activeSlide)) {
+            swiper.autoplay.stop();
+          } else {
+            swiper.autoplay.start();
+          }
+        }}
         autoplay={{
           delay: 6000,
           disableOnInteraction: true,
@@ -54,18 +62,31 @@ const HomePageGallerySlider = ({ cssClasses, data }: Props) => {
           } as React.CSSProperties
         }
       >
-        {data.map((slide, index) => (
-          <SwiperSlide key={index} className="pb-7 desktop:pb-0">
-            <Image
-              src={slide}
-              alt={`Maple Ranch Gallery - Image ${index + 1}`}
-              className="w-full h-full object-cover"
-              width={1360}
-              height={630}
-              loading={index < 1 ? "eager" : "lazy"}
-            />
-          </SwiperSlide>
-        ))}
+        {data.map((slide, index) => {
+          const isVideo = /\.(mp4|webm)$/i.test(slide);
+          return (
+            <SwiperSlide key={index} className="pb-7 desktop:pb-0">
+              {isVideo ? (
+                <video
+                  src={slide}
+                  controls
+                  muted
+                  playsInline
+                  className="w-full h-full object-contain bg-black"
+                />
+              ) : (
+                <Image
+                  src={slide}
+                  alt={`Maple Ranch Gallery - Image ${index + 1}`}
+                  className="w-full h-full object-cover"
+                  width={1360}
+                  height={630}
+                  loading={index < 1 ? "eager" : "lazy"}
+                />
+              )}
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
 
       <button
@@ -87,4 +108,4 @@ const HomePageGallerySlider = ({ cssClasses, data }: Props) => {
   );
 };
 
-export default HomePageGallerySlider;
+export default GallerySlider;

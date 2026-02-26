@@ -125,9 +125,9 @@
   },
   "quarterHorsesPage": {
     "heroGallery": [
-      "/images/quarter-horses/hero-slider/20241123_085655.jpg",
-      "/images/quarter-horses/hero-slider/20250513_150427.jpg",
-      "/images/quarter-horses/hero-slider/20250513_150605.jpg"
+      "/images/quarter-horses/hero-slider/slide 1.jpg",
+      "/images/quarter-horses/hero-slider/IMG-20251211-WA0027.jpg",
+      "/images/quarter-horses/hero-slider/20240305_142641.jpg"
     ],
     "about": {
       "heading": "About",
@@ -138,9 +138,18 @@
         "Our brood mares join the [Maple Ranch Adventures](/adventures#horse-trails) horses during the Easter, October and December school holidays, when you can enjoy the unique experience of riding scenic trails on Quarter Horses with their foals."
       ],
       "images": [
-        "/images/quarter-horses/20250528_153045.jpg",
-        "/images/quarter-horses/20221109_183443.jpg",
-        "/images/quarter-horses/IMG-20240330-WA0033.jpg"
+        "/images/quarter-horses/gallery/Screenshot_20221013-164826_Facebook.jpg",
+        "/images/quarter-horses/gallery/20250804_110828.jpg",
+        "/images/quarter-horses/gallery/20221212_210710.jpg"
+      ],
+      "gallery": [
+        "/images/quarter-horses/gallery/FB_IMG_1592945370141.jpg",
+        "/images/quarter-horses/gallery/20240305_142906.jpg",
+        "/images/quarter-horses/gallery/20250930_122634.jpg",
+        "/images/quarter-horses/gallery/20251211_084850.jpg",
+        "/images/quarter-horses/gallery/IMG-20250823-WA0042.jpg",
+        "/images/quarter-horses/gallery/IMG-20250820-WA0072.jpg",
+        "/images/quarter-horses/gallery/er34t11.23.40.mp4"
       ],
       "button": {
         "text": "View our Sires",

@@ -1,4 +1,4 @@
-import HomePageGallerySlider from "./home-page-gallery-slider";
+import GallerySlider from "@/_lib/gallery-slider";
 import generalData from "@/_data/general-data.json";
 import classNames from "classnames";
 
@@ -16,7 +16,7 @@ const HomePageGalleryComponent = ({ cssClasses }: Props) => {
       className={classNames("flex flex-col gap-5 tablet:gap-10", cssClasses)}
     >
       <h2 className="font-rye text-[32px] tablet:text-[40px]">Gallery</h2>
-      <HomePageGallerySlider data={gallery} />
+      <GallerySlider data={gallery} />
     </section>
   );
 };

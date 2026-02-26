@@ -5,6 +5,7 @@ import heroGalleryData from "@/_data/general-data.json";
 import AboutComponent from "@/_components/pages/about-component";
 import SiresComponent from "@/_components/pages/quarter-horses/sires-component";
 import PageWrapper from "@/_lib/page-wrapper";
+import GallerySlider from "@/_lib/gallery-slider";
 
 export const metadata = generatePageMetadata({
   title: "Blue Haze American Quarter Horse Stud | Maple Ranch Plettenberg Bay",
@@ -49,6 +50,7 @@ const QuarterHorses = () => {
       />
       <PageWrapper cssClasses="grid gap-10 pt-15">
         <AboutComponent data={about} />
+        <GallerySlider data={about.gallery} />
         <div id="sires" className="scroll-mt-0" />
         <SiresComponent />
       </PageWrapper>
