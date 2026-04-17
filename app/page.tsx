@@ -54,6 +54,7 @@ export default function Home() {
           id="contact"
           cssClasses="scroll-mt-10"
           department="all"
+          facebookLink="https://www.facebook.com/Mossandmaple17/"
         />
       </PageWrapper>
     </div>

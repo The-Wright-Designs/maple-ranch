@@ -14,12 +14,18 @@ interface ContactComponentProps {
   department?: DepartmentType;
   id?: string;
   cssClasses?: string;
+  instaLink?: string;
+  facebookLink?: string;
+  tripAdvisorLink?: string;
 }
 
 const ContactComponent = ({
   department = "all",
   id,
   cssClasses,
+  facebookLink,
+  instaLink,
+  tripAdvisorLink,
 }: ContactComponentProps) => {
   const showGeneral = department === "all" || department === "general";
   const showRestaurant = department === "all" || department === "restaurant";
@@ -79,7 +85,11 @@ const ContactComponent = ({
             </Link>
           </div>
         </div>
-        <SocialIcons />
+        <SocialIcons
+          facebookLink={facebookLink}
+          instaLink={instaLink}
+          tripAdvisorLink={tripAdvisorLink}
+        />
       </div>
       <MapComponent cssClasses="w-full aspect-square tablet:aspect-video desktop:row-span-2 desktop:aspect-auto desktop:h-full" />
       <div className="bg-black rounded-[6px] px-5 py-10 w-full">

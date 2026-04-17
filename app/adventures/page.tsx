@@ -35,7 +35,8 @@ export const metadata = generatePageMetadata({
     "MR Adventures - E-Quad Tours, Horse Trails & Team Building at Maple Ranch",
   ogDescription:
     "Whisper-quiet electric quad bike tours and scenic horse trails through indigenous forest, team building programs, and outdoor adventures near Plettenberg Bay. Book your adventure today!",
-  twitterTitle: "MR Adventures - E-Quad Tours, Horse Trails & Outdoor Activities",
+  twitterTitle:
+    "MR Adventures - E-Quad Tours, Horse Trails & Outdoor Activities",
   twitterDescription:
     "Guided electric quad bike tours, horse trails, and team building in Plettenberg Bay.",
   ogImageAlt: "MR Adventures - E-Quad Tours, Horse Trails & Outdoor Activities",
@@ -58,7 +59,13 @@ const AdventuresPage = () => {
           cssClasses="scroll-mt-10"
           data={horseTrailsAbout}
         />
-        <ContactComponent id="contact" department="adventures" />
+        <ContactComponent
+          id="contact"
+          department="adventures"
+          facebookLink="https://www.facebook.com/profile.php?id=61579958188427"
+          instaLink="https://www.instagram.com/mapleranch_adventures/"
+          tripAdvisorLink="https://www.tripadvisor.com/Attraction_Review-g312558-d33035628-Reviews-Maple_Ranch_Adventures-Plettenberg_Bay_Western_Cape.html"
+        />
       </PageWrapper>
     </div>
   );
